@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const taskSchema = new mongoose.Schema({
-    text: {
+    userTask: {
         type: String,
         required: true
     },
@@ -11,7 +11,7 @@ const taskSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        default: Danodete.now
+        default: Date.now
     }
 });
 
