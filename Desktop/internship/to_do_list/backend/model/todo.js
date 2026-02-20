@@ -5,14 +5,10 @@ const taskSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    completed: {
+    status: {
         type: Boolean,
         default: false
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
     }
 });
 
-module.exports = mongoose.model("Task", taskSchema);
+module.exports = mongoose.model("Todo", taskSchema);
